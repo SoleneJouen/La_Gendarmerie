@@ -1,0 +1,145 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  text-align: justify;
+  background-color: #FCFCFA;
+}
+
+header{
+  font-family: 'Amatic SC', cursive;
+  font-family: 'Roboto', sans-serif;
+  display: block;
+  background-color: #FCFCFA;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+
+main{
+  padding-top: 80px;
+  font-family: 'Arial';
+
+}
+
+footer{
+  font-weight: bold;
+  text-align: right;
+}
+
+table{
+  text-align: center;
+  width: 100%;
+  border: 2px solid black;
+  table-layout: fixed;
+}
+
+a{
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px;
+  width: 100%;
+}
+
+ /*Menu*/
+.Menu{
+  background: url("https://media.istockphoto.com/id/806626836/fr/vectoriel/drapeau-france.jpg?s=612x612&w=0&k=20&c=9au6i1sguZnoHVr6qinZoHJV1t4oKzQkFTi__3U531g=");
+  background-size: cover;
+  border: 2px solid black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 20px;
+  font-weight: bold;
+  gap: 10px;
+  justify-content: flex-start;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.item_1,
+.item_2,
+.item_3,
+.item_4,
+.item_5,
+.item_6 {
+  background-color: #2a3587;
+  border: 2px solid black;
+  border-radius: 10px;
+  flex-grow: 1;
+}
+
+.item_3,
+.item_4{
+  background-color: white;
+}
+
+.item_5,
+.item_6{
+  background-color: #cf2228;
+}
+
+.white{
+  color: white;
+}
+
+.black{
+  color: black;
+}
+
+/*Appellation*/
+.red{
+  background-color: red;
+  color: white;
+}
+
+/*Cadre*/
+.Cadres{
+  border-radius: 15px;
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  margin: 30px;
+}
+
+.Cadres_1{
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+/*Contenu*/
+.Contenu{
+    margin: 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 2%;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 90%;
+    font-weight: bold;
+    color: #2a3587;
+    background: #e0e0e0;
+    -webkit-box-shadow: 5px 5px 5px 0 #000000,inset 4px 4px 15px 0 #000,5px -1px 15px 1px rgba(0,0,0,0);
+    box-shadow: 5px 5px 5px 0 #000000,inset 4px 4px 15px 0 #000,5px -1px 15px 1px rgba(0,0,0,0);
+}
+
+/*Images*/
+.Grades{
+  width: 100px;
+  height: 173px;
+}
+
+.Unites {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin-top: 2%;
+    margin-right: auto;
+    margin-left: auto;
+}

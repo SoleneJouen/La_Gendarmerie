@@ -1,0 +1,354 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  text-align: justify;
+  background-color: #FCFCFA;
+}
+
+header{
+  font-family: 'Roboto', sans-serif;
+  display: block;
+  background-color: #FCFCFA;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+
+main{
+  padding-top: 80px;
+  font-family: 'Arial';
+}
+
+footer{
+  font-weight: bold;
+  text-align: right;
+}
+
+a{
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px;
+  width: 100%;
+}
+
+/*Menu*/
+.Menu{
+  background: url("https://media.istockphoto.com/id/806626836/fr/vectoriel/drapeau-france.jpg?s=612x612&w=0&k=20&c=9au6i1sguZnoHVr6qinZoHJV1t4oKzQkFTi__3U531g=");
+  background-size: cover;
+  border: 2px solid black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 20px;
+  font-weight: bold;
+  gap: 10px;
+  justify-content: flex-start;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.item_1,
+.item_2,
+.item_3,
+.item_4,
+.item_5,
+.item_6 {
+  background-color: #2a3587;
+  border: 2px solid black;
+  border-radius: 10px;
+  flex-grow: 1;
+}
+
+.item_3,
+.item_4{
+  background-color: white;
+}
+
+.item_5,
+.item_6{
+  background-color: #cf2228;
+}
+
+.white{
+  color: white;
+}
+
+.black{
+  color: black;
+}
+
+/*Bloc contenu*/
+.Contenu{
+  margin: 5%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 2%;
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 90%;
+  font-weight: bold;
+  color: #2a3587;
+  background: #e0e0e0;
+  -webkit-box-shadow: 5px 5px 5px 0 #000000,inset 4px 4px 15px 0 #000,5px -1px 15px 1px rgba(0,0,0,0);
+  box-shadow: 5px 5px 5px 0 #000000,inset 4px 4px 15px 0 #000,5px -1px 15px 1px rgba(0,0,0,0);
+}
+
+/*Grid*/
+.G1,
+.G2,
+.G3,
+.G4,
+.G6,
+.G8,
+.G10,
+.G14{
+  display: grid;
+  grid-template-columns: [c-1] 50px [c-2] 50px [c-3] 50px [c-4] auto[c-end];
+  padding-top: 15px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.G1{
+  grid-template-rows: [l-1] 50px [l-2] auto [l-end];
+}
+
+.G2{
+  grid-template-rows: [l-1] 50px [l-2] 50px [l-3] auto [l-end];
+}
+
+.G3{
+  grid-template-rows: [l-1] 50px [l-2] 50px [l-3] 50px [l-4] auto [l-end];
+}
+
+.G4{
+  grid-template-rows: [l-1] 50px [l-2] 50px [l-3] 50px [l-4] 50px [l-5] auto [l-end];
+}
+
+.G6{
+  grid-template-rows: [l-1] 50px [l-2] 50px [l-3] 50px [l-4] 50px [l-5] 50px [l-6] 50px [l-7] auto [l-end];
+}
+
+.G8{
+  grid-template-rows: [l-1] 50px [l-2] 50px [l-3] 50px [l-4] 50px [l-5] 50px [l-6] 50px [l-7] 50px [l-8] 50px [l-9] auto [l-end];
+}
+
+.G10{
+  grid-template-rows: [l-1] 50px [l-2] 50px [l-3] 50px [l-4] 50px [l-5] 50px [l-6] 50px [l-7] 50px [l-8] 50px [l-9] 50px [l-10] 50px [l-11] auto [l-end];
+}
+
+.G14{
+  grid-template-rows: [l-1] 50px [l-2] 50px [l-3] 50px [l-4] 50px [l-5] 50px [l-6] 50px [l-7] 50px [l-8] 50px [l-9] 50px [l-10] 50px [l-11] 50px [l-12] 50px [l-13] 50px [l-14] 50px [l-15] auto [l-end];
+}
+
+.item{
+  border: 1px solid black;
+  grid-column-start: span 2;
+  grid-row-start: span 2;
+  text-align: center;
+}
+
+.item-1-1,
+.item-1-2,
+.item-1-3,
+.item-1-4,
+.item-1-6,
+.item-1-8,
+.item-1-10,
+.item-1-14{
+  grid-column-start: c-1;
+  grid-column-end: c-3;
+  grid-row-start: l-1;
+  background-color: #2a3587;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+.item-1-1{
+  grid-row-end: l-2;
+}
+
+.item-1-2{
+  grid-row-end: l-3;
+}
+
+.item-1-3{
+  grid-row-end: l-4;
+}
+
+.item-1-4{
+  grid-row-end: l-5;
+}
+
+.item-1-6{
+  grid-row-end: l-7;
+}
+
+.item-1-8{
+  grid-row-end: l-9;
+}
+
+.item-1-10{
+  grid-row-end: l-11;
+}
+
+.item-1-14{
+  grid-row-end: l-15;
+}
+
+.item-2,
+.item-3,
+.item-4,
+.item-5,
+.item-6,
+.item-7,
+.item-8,
+.item-9,
+.item-10,
+.item-11,
+.item-12,
+.item-13,
+.item-14,
+.item-15{
+  grid-column-start: c-3;
+  grid-column-end: c-end;
+  text-align: left;
+}
+
+.item-2{
+  grid-row-start: l-1;
+  grid-row-end: l-2;
+}
+
+.item-3{
+  grid-row-start: l-2;
+  grid-row-end: l-3;
+}
+
+.item-4{
+  grid-row-start: l-3;
+  grid-row-end: l-4;
+}
+.item-5{
+  grid-row-start: l-4;
+  grid-row-end: l-5;
+}
+
+.item-6{
+  grid-row-start: l-5;
+  grid-row-end: l-6;
+}
+.item-7{
+  grid-row-start: l-6;
+  grid-row-end: l-7;
+}
+.item-8{
+  grid-row-start: l-7;
+  grid-row-end: l-8;
+}
+
+.item-9{
+  grid-row-start: l-8;
+  grid-row-end: l-9;
+}
+.item-10{
+  grid-row-start: l-9;
+  grid-row-end: l-10;
+}
+.item-11{
+  grid-row-start: l-10;
+  grid-row-end: l-11;
+}
+
+.item-12{
+  grid-row-start: l-11;
+  grid-row-end: l-12;
+}
+
+.item-13{
+  grid-row-start: l-12;
+  grid-row-end: l-13;
+}
+
+.item-14{
+  grid-row-start: l-13;
+  grid-row-end: l-14;
+}
+
+.item-15{
+  grid-row-start: l-14;
+  grid-row-end: l-15;
+}
+
+/*Images*/
+.center{
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.BPT{
+  width: 100px;
+  height: 100px;
+}
+
+.CORG{
+  width: 200px;
+  height: 150px;
+}
+
+.Criminelle{
+  width: 200px;
+  height: 113px;
+}
+
+.Drager{
+  width: 200px;
+  height: 113px;
+}
+
+.Empreinte{
+  width: 150px;
+  height: 150px;
+}
+
+.GM{
+  width: 150px;
+  height: 150px;
+}
+
+.Grades{
+  width: 100px;
+  height: 173px;
+}
+
+.OPJ{
+  width: 150px;
+  height: 150px;
+}
+
+.PSIG{
+  width: 150px;
+  height: 150px;
+}
+
+.Reserve{
+  width: 150px;
+  height: 150px;
+}
+
+.Vehicule{
+  width: 200px;
+  height: 133px;
+}
+
+.ZO{
+  width: 150px;
+  height: 150px;
+}
